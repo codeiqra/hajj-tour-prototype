@@ -1,0 +1,500 @@
+- generic [ref=e4]:
+  - generic [ref=e5]:
+    - generic [ref=e6]:
+      - generic [ref=e7]: PROTOTYPE
+      - generic [ref=e8]:
+        - button "Website" [ref=e9] [cursor=pointer]
+        - button "Zaireen app" [ref=e10] [cursor=pointer]
+        - button "Admin panel" [ref=e11] [cursor=pointer]
+    - generic [ref=e12]:
+      - button "Theme ▾" [ref=e14] [cursor=pointer]:
+        - text: Theme
+        - generic [ref=e16]: ▾
+      - button "Dark" [ref=e17] [cursor=pointer]
+  - generic [ref=e18]:
+    - banner [ref=e19]:
+      - generic [ref=e20]:
+        - button "M Maryam Hajj Tours" [ref=e21] [cursor=pointer]:
+          - generic [ref=e22]: M
+          - generic [ref=e23]: Maryam Hajj Tours
+        - navigation [ref=e24]:
+          - button "Home" [ref=e25] [cursor=pointer]
+          - button "About us" [ref=e26] [cursor=pointer]
+          - button "Packages" [ref=e27] [cursor=pointer]
+          - button "Rules" [ref=e28] [cursor=pointer]
+          - generic [ref=e29]:
+            - button "English ▾" [ref=e31] [cursor=pointer]:
+              - generic [ref=e35]: English
+              - generic [ref=e36]: ▾
+            - button "Theme ▾" [ref=e38] [cursor=pointer]:
+              - text: Theme
+              - generic [ref=e40]: ▾
+          - button "Ask us" [ref=e41] [cursor=pointer]
+    - generic [ref=e42]:
+      - generic [ref=e45]:
+        - generic [ref=e46]: Trusted by 6,200+ Zaireen since 2009
+        - heading "Your Umrah and Hajj journey from Indore, with full care" [level=1] [ref=e53]:
+          - generic [ref=e54]: Your
+          - generic [ref=e55]: Umrah
+          - generic [ref=e56]: and
+          - generic [ref=e57]: Hajj
+          - generic [ref=e58]: journey
+          - generic [ref=e59]: from
+          - generic [ref=e60]: Indore,
+          - generic [ref=e61]: with
+          - generic [ref=e62]: full
+          - generic [ref=e63]: care
+        - paragraph [ref=e64]: We handle visa, flights and hotels near the Haram, and a guide stays with your group. After booking, your ticket, visa and payments are all in one app on your phone.
+        - generic [ref=e65]:
+          - button "See packages →" [ref=e66] [cursor=pointer]:
+            - generic [ref=e67]: See packages
+            - generic [ref=e68]: →
+          - link "WhatsApp us" [ref=e70] [cursor=pointer]:
+            - /url: https://wa.me/919820012345?text=Assalamu%20alaikum.%20I%20would%20like%20to%20know%20about%20your%20packages.
+      - generic [ref=e74]: Video · Masjid al-Haram (Pixabay)
+    - generic [ref=e76]:
+      - generic [ref=e77]: Registered and approved
+      - generic [ref=e78]:
+        - generic [ref=e79]:
+          - generic [ref=e80]: Hajj Committee of India
+          - generic [ref=e81]: Registered Private Tour Operator · PTO/MP/0412
+        - generic [ref=e82]:
+          - generic [ref=e83]: Ministry of Hajj & Umrah, KSA
+          - generic [ref=e84]: Approved Umrah partner agent
+        - generic [ref=e85]:
+          - generic [ref=e86]: IATA
+          - generic [ref=e87]: Approved travel agent · 14-3 2217 5
+        - generic [ref=e88]:
+          - generic [ref=e89]: Government of Madhya Pradesh
+          - generic [ref=e90]: Shop & Establishment reg. 760331
+    - generic [ref=e91]:
+      - generic [ref=e92]: Photo · Founder with a group in Madinah
+      - generic [ref=e95]:
+        - generic [ref=e96]: ABOUT US
+        - heading "A family business serving Zaireen from Indore since 2009" [level=2] [ref=e97]:
+          - generic [ref=e98]: A
+          - generic [ref=e99]: family
+          - generic [ref=e100]: business
+          - generic [ref=e101]: serving
+          - generic [ref=e102]: Zaireen
+          - generic [ref=e103]: from
+          - generic [ref=e104]: Indore
+          - generic [ref=e105]: since
+          - generic [ref=e106]: "2009"
+        - paragraph [ref=e107]: Abdul Kareem Ansari started Maryam Hajj Tours after taking his own parents for Umrah. He saw how hard the planning was for elderly Zaireen. The company is named after his mother.
+        - paragraph [ref=e108]: Today 14 people work in our office on Khajrana Road. They handle visas, flights, hotels and payments. Our guides go with every group.
+        - generic [ref=e109]:
+          - generic [ref=e110]:
+            - generic [ref=e111]: "17"
+            - generic [ref=e112]: years of khidmat
+          - generic [ref=e113]:
+            - generic [ref=e114]: 6,200+
+            - generic [ref=e115]: Zaireen served
+          - generic [ref=e116]:
+            - generic [ref=e117]: 140+
+            - generic [ref=e118]: groups
+          - generic [ref=e119]:
+            - generic [ref=e120]: "14"
+            - generic [ref=e121]: staff in Indore
+        - figure "Abdul Kareem Ansari, Founder" [ref=e122]:
+          - blockquote [ref=e123]: “We plan every journey as if our own parents were going.”
+    - generic [ref=e191]:
+      - heading "What Zaireen say" [level=2] [ref=e192]:
+        - generic [ref=e193]: What
+        - generic [ref=e194]: Zaireen
+        - generic [ref=e195]: say
+      - generic [ref=e196]:
+        - figure "Shabana Khan Umrah, Dec 2025" [ref=e197]:
+          - blockquote [ref=e198]: “My father is 74 and uses a wheelchair. The guide stayed with him in every Tawaf. We never felt alone.”
+          - generic [ref=e199]:
+            - generic [ref=e200]: Shabana Khan
+            - generic [ref=e201]: Umrah, Dec 2025
+        - figure "Faisal Memon Umrah, Feb 2026" [ref=e202]:
+          - blockquote [ref=e203]: “I did the booking for my parents from Pune. All documents and payments were on my phone.”
+          - generic [ref=e204]:
+            - generic [ref=e205]: Faisal Memon
+            - generic [ref=e206]: Umrah, Feb 2026
+        - figure "Rehana Siddiqui Hajj 2025" [ref=e207]:
+          - blockquote [ref=e208]: “The hotel was close to the Haram. When we got lost, the Arabic address card helped us.”
+          - generic [ref=e209]:
+            - generic [ref=e210]: Rehana Siddiqui
+            - generic [ref=e211]: Hajj 2025
+    - generic [ref=e212]:
+      - generic [ref=e213]:
+        - heading "Upcoming trips" [level=2] [ref=e214]:
+          - generic [ref=e215]: Upcoming
+          - generic [ref=e216]: trips
+        - button "All packages →" [ref=e217] [cursor=pointer]:
+          - text: All packages
+          - generic [ref=e218]: →
+      - generic [ref=e219]:
+        - article [ref=e220]:
+          - generic [ref=e221]: Photo · Masjid al-Haram courtyard
+          - generic [ref=e224]:
+            - generic [ref=e225]:
+              - generic [ref=e226]: Umrah
+              - generic [ref=e227]: 7 seats left
+            - heading "Umrah Saver · 15 days" [level=3] [ref=e228]
+            - generic [ref=e229]: Departs 12 Nov 2026
+            - generic [ref=e230]:
+              - generic [ref=e231]:
+                - generic [ref=e232]: Makkah
+                - generic [ref=e233]: Dar Al Noor Residency · 650 m from the Haram
+              - generic [ref=e234]:
+                - generic [ref=e235]: Madinah
+                - generic [ref=e236]: Rawdat Taiba Hotel · 300 m from Masjid-e-Nabawi
+            - generic [ref=e237]:
+              - generic [ref=e238]:
+                - generic [ref=e239]: From
+                - generic [ref=e240]: ₹98,500
+              - generic [ref=e241]: per person, 4 in one room
+            - generic [ref=e242]:
+              - button "See details" [ref=e243] [cursor=pointer]
+              - link "WhatsApp us" [ref=e244] [cursor=pointer]:
+                - /url: https://wa.me/919820012345?text=Assalamu%20alaikum.%20I%20would%20like%20to%20know%20about%20Umrah%20Saver%20%C2%B7%2015%20days
+        - article [ref=e246]:
+          - generic [ref=e247]: Photo · Clock tower from hotel window
+          - generic [ref=e250]:
+            - generic [ref=e251]:
+              - generic [ref=e252]: Umrah
+              - generic [ref=e253]: 12 seats left
+            - heading "Umrah Comfort · 10 days" [level=3] [ref=e254]
+            - generic [ref=e255]: Departs 20 Nov 2026
+            - generic [ref=e256]:
+              - generic [ref=e257]:
+                - generic [ref=e258]: Makkah
+                - generic [ref=e259]: Qasr Al Safa Hotel · 200 m from the Haram
+              - generic [ref=e260]:
+                - generic [ref=e261]: Madinah
+                - generic [ref=e262]: Al Ansar Grand · 120 m from Masjid-e-Nabawi
+            - generic [ref=e263]:
+              - generic [ref=e264]:
+                - generic [ref=e265]: From
+                - generic [ref=e266]: ₹1,35,000
+              - generic [ref=e267]: per person, 4 in one room
+            - generic [ref=e268]:
+              - button "See details" [ref=e269] [cursor=pointer]
+              - link "WhatsApp us" [ref=e270] [cursor=pointer]:
+                - /url: https://wa.me/919820012345?text=Assalamu%20alaikum.%20I%20would%20like%20to%20know%20about%20Umrah%20Comfort%20%C2%B7%2010%20days
+        - article [ref=e272]:
+          - generic [ref=e273]: Photo · Iftar in the Haram
+          - generic [ref=e276]:
+            - generic [ref=e277]:
+              - generic [ref=e278]: Umrah
+              - generic [ref=e279]: 30 seats left
+            - heading "Ramadan Umrah · 21 days" [level=3] [ref=e280]
+            - generic [ref=e281]: Departs 18 Feb 2027
+            - generic [ref=e282]:
+              - generic [ref=e283]:
+                - generic [ref=e284]: Makkah
+                - generic [ref=e285]: Dar Al Noor Residency · 650 m from the Haram
+              - generic [ref=e286]:
+                - generic [ref=e287]: Madinah
+                - generic [ref=e288]: Rawdat Taiba Hotel · 300 m from Masjid-e-Nabawi
+            - generic [ref=e289]:
+              - generic [ref=e290]:
+                - generic [ref=e291]: From
+                - generic [ref=e292]: ₹1,65,000
+              - generic [ref=e293]: per person, 4 in one room
+            - generic [ref=e294]:
+              - button "See details" [ref=e295] [cursor=pointer]
+              - link "WhatsApp us" [ref=e296] [cursor=pointer]:
+                - /url: https://wa.me/919820012345?text=Assalamu%20alaikum.%20I%20would%20like%20to%20know%20about%20Ramadan%20Umrah%20%C2%B7%2021%20days
+    - generic [ref=e299]:
+      - heading "How to book" [level=2] [ref=e300]:
+        - generic [ref=e301]: How
+        - generic [ref=e302]: to
+        - generic [ref=e303]: book
+      - generic [ref=e304]:
+        - generic [ref=e306]:
+          - generic [ref=e307]:
+            - generic [ref=e308]: "1"
+            - generic [ref=e313]:
+              - generic [ref=e314]: STEP 1
+              - heading "Ask us" [level=3] [ref=e315]
+              - paragraph [ref=e316]: Pick a package and give your phone number, or send us a WhatsApp message.
+          - generic [ref=e317]:
+            - generic [ref=e318]: "2"
+            - generic [ref=e323]:
+              - generic [ref=e324]: STEP 2
+              - heading "We call you" [level=3] [ref=e325]
+              - paragraph [ref=e326]: Our team tells you the dates, rooms and prices, and books your seat.
+          - generic [ref=e327]:
+            - generic [ref=e328]: "3"
+            - generic [ref=e333]:
+              - generic [ref=e334]: STEP 3
+              - heading "Everything in your app" [level=3] [ref=e335]
+              - paragraph [ref=e336]: Send your documents, check your visa, and keep your ticket and hotel details on your phone. It works without internet too.
+        - generic [ref=e337]:
+          - button "Ask us →" [ref=e338] [cursor=pointer]:
+            - generic [ref=e339]: Ask us
+            - generic [ref=e340]: →
+          - link "WhatsApp us" [ref=e341] [cursor=pointer]:
+            - /url: https://wa.me/919820012345?text=Assalamu%20alaikum.%20I%20would%20like%20to%20know%20about%20your%20packages.
+    - generic [ref=e343]:
+      - heading "Why travel with us" [level=2] [ref=e344]:
+        - generic [ref=e345]: Why
+        - generic [ref=e346]: travel
+        - generic [ref=e347]: with
+        - generic [ref=e348]: us
+      - generic [ref=e349]:
+        - generic [ref=e351] [cursor=pointer]:
+          - generic [ref=e352]:
+            - generic [ref=e355]: "01"
+            - heading "A guide with every group" [level=3] [ref=e356]
+            - generic [ref=e357]: Tap or hover to read ↻
+          - generic [ref=e358]:
+            - generic [ref=e359]: "01"
+            - heading "A guide with every group" [level=3] [ref=e360]
+            - paragraph [ref=e361]: A trained guide goes with your group from Indore and back, and helps you with all the arkaan.
+        - generic [ref=e363] [cursor=pointer]:
+          - generic [ref=e364]:
+            - generic [ref=e367]: "02"
+            - heading "Hotels near the Haram" [level=3] [ref=e368]
+            - generic [ref=e369]: Tap or hover to read ↻
+          - generic [ref=e370]:
+            - generic [ref=e371]: "02"
+            - heading "Hotels near the Haram" [level=3] [ref=e372]
+            - paragraph [ref=e373]: We pick hotels you can walk from, and tell you the exact distance before you book.
+        - generic [ref=e375] [cursor=pointer]:
+          - generic [ref=e376]:
+            - generic [ref=e379]: "03"
+            - heading "Care for elders" [level=3] [ref=e380]
+            - generic [ref=e381]: Tap or hover to read ↻
+          - generic [ref=e382]:
+            - generic [ref=e383]: "03"
+            - heading "Care for elders" [level=3] [ref=e384]
+            - paragraph [ref=e385]: Wheelchair help, ground-floor rooms if you ask, and one family leader who can handle everything.
+        - generic [ref=e387] [cursor=pointer]:
+          - generic [ref=e388]:
+            - generic [ref=e391]: "04"
+            - heading "Clear price, clear receipt" [level=3] [ref=e392]
+            - generic [ref=e393]: Tap or hover to read ↻
+          - generic [ref=e394]:
+            - generic [ref=e395]: "04"
+            - heading "Clear price, clear receipt" [level=3] [ref=e396]
+            - paragraph [ref=e397]: One price for each room type. Every payment gets a numbered receipt in your app.
+    - generic [ref=e399]:
+      - generic [ref=e400]:
+        - heading "What is included" [level=2] [ref=e401]:
+          - generic [ref=e402]: What
+          - generic [ref=e403]: is
+          - generic [ref=e404]: included
+        - paragraph [ref=e405]: Most packages have these. See each package for the full list.
+      - generic [ref=e406]:
+        - generic [ref=e407]:
+          - generic [ref=e408]: Visa
+          - generic [ref=e409]: Umrah or Hajj visa through our Saudi partner
+        - generic [ref=e410]:
+          - generic [ref=e411]: Flights
+          - generic [ref=e412]: Flights from Indore and back, 2 bags of 23 kg
+        - generic [ref=e413]:
+          - generic [ref=e414]: Hotels
+          - generic [ref=e415]: Hotels in Makkah and Madinah, the room you choose
+        - generic [ref=e416]:
+          - generic [ref=e417]: Travel
+          - generic [ref=e418]: Airport, Makkah–Madinah and Ziyarat by AC bus
+        - generic [ref=e419]:
+          - generic [ref=e420]: Ziyarat
+          - generic [ref=e421]: Ziyarat in Makkah and Madinah with a guide
+        - generic [ref=e422]:
+          - generic [ref=e423]: Khana
+          - generic [ref=e424]: Nashta and dinner in most packages
+        - generic [ref=e425]:
+          - generic [ref=e426]: Zamzam
+          - generic [ref=e427]: 5 litres of Zamzam for each person when you come back
+        - generic [ref=e428]:
+          - generic [ref=e429]: Training
+          - generic [ref=e430]: A class in Indore, 2 weeks before the journey
+    - generic [ref=e432]:
+      - generic [ref=e433]:
+        - heading "Your journey, step by step" [level=2] [ref=e434]:
+          - generic [ref=e435]: Your
+          - generic [ref=e436]: journey,
+          - generic [ref=e437]: step
+          - generic [ref=e438]: by
+          - generic [ref=e439]: step
+        - paragraph [ref=e440]: A short guide. Your guide explains each step in the class before you leave.
+        - generic [ref=e441]:
+          - button "Umrah" [ref=e442] [cursor=pointer]
+          - button "Hajj" [ref=e443] [cursor=pointer]
+        - generic [ref=e444]: 1 / 4
+      - generic [ref=e447]:
+        - generic [ref=e448]:
+          - generic [ref=e449]: "1"
+          - generic [ref=e451]:
+            - heading "Ihram" [level=3] [ref=e452]
+            - paragraph [ref=e453]: At the Miqat, wear the Ihram and make the niyyat.
+        - generic [ref=e454]:
+          - generic [ref=e455]: "2"
+          - generic [ref=e457]:
+            - heading "Tawaf" [level=3] [ref=e458]
+            - paragraph [ref=e459]: Go around the Kaaba 7 times, starting from Hajr-e-Aswad.
+        - generic [ref=e460]:
+          - generic [ref=e461]: "3"
+          - generic [ref=e463]:
+            - heading "Sa'i" [level=3] [ref=e464]
+            - paragraph [ref=e465]: Walk 7 times between Safa and Marwah.
+        - generic [ref=e466]:
+          - generic [ref=e467]: "4"
+          - generic [ref=e469]:
+            - heading "Halq or Taqseer" [level=3] [ref=e470]
+            - paragraph [ref=e471]: Men shave the head or cut the hair short. Women cut a little hair. Your Umrah is complete.
+    - generic [ref=e473]:
+      - heading "Tayyari list" [level=2] [ref=e474]:
+        - generic [ref=e475]: Tayyari
+        - generic [ref=e476]: list
+      - generic [ref=e477]:
+        - generic [ref=e478]:
+          - heading "Documents" [level=3] [ref=e479]
+          - generic [ref=e480]: Passport, valid 6+ months after you return
+          - generic [ref=e483]: 4 photos, white background
+          - generic [ref=e486]: Aadhaar card copy
+          - generic [ref=e489]: Meningitis vaccine certificate
+        - generic [ref=e492]:
+          - heading "Kapde" [level=3] [ref=e493]
+          - generic [ref=e494]: 2 sets of Ihram (men)
+          - generic [ref=e497]: Loose, simple clothes
+          - generic [ref=e500]: Comfortable chappals for walking
+          - generic [ref=e503]: Light jacket for Madinah nights
+        - generic [ref=e506]:
+          - heading "Sehat" [level=3] [ref=e507]
+          - generic [ref=e508]: Your daily medicines for 6 weeks
+          - generic [ref=e511]: Doctor's letter for your medicines
+          - generic [ref=e514]: Sunscreen and umbrella
+          - generic [ref=e517]: Small first-aid kit
+        - generic [ref=e520]:
+          - heading "Paisa and phone" [level=3] [ref=e521]
+          - generic [ref=e522]: Some Saudi riyal in cash
+          - generic [ref=e525]: International roaming or local SIM
+          - generic [ref=e528]: Power bank and charger
+          - generic [ref=e531]: Our app on your phone
+    - generic [ref=e535]:
+      - heading "Photos from our groups" [level=2] [ref=e536]:
+        - generic [ref=e537]: Photos
+        - generic [ref=e538]: from
+        - generic [ref=e539]: our
+        - generic [ref=e540]: groups
+      - generic [ref=e541]:
+        - generic [ref=e542]: Group at Masjid al-Haram, Dec 2025
+        - generic [ref=e544]: Ziyarat at Mount Uhud
+        - generic [ref=e546]: Madinah hotel lobby
+        - generic [ref=e548]: Class before the journey, Indore
+        - generic [ref=e550]: Group at Quba Mosque
+        - generic [ref=e552]: Return at Indore airport
+        - generic [ref=e554]: Masjid-e-Nabawi at sunrise
+        - generic [ref=e556]: Makkah clock tower at night
+        - generic [ref=e558]: Tawaf, Ramadan 2026
+    - generic [ref=e561]:
+      - generic [ref=e562]:
+        - generic [ref=e563]: SAWAL-JAWAB
+        - heading "Sawal-Jawab" [level=2] [ref=e564]
+        - paragraph [ref=e566]: Want to talk? Call or WhatsApp us.
+        - link "WhatsApp us" [ref=e567] [cursor=pointer]:
+          - /url: https://wa.me/919820012345?text=Assalamu%20alaikum.%20I%20would%20like%20to%20know%20about%20your%20packages.
+      - generic [ref=e568]:
+        - generic [ref=e569]:
+          - button "Which documents do I need? −" [ref=e570] [cursor=pointer]:
+            - generic [ref=e571]: Which documents do I need?
+            - generic [ref=e572]: −
+          - paragraph [ref=e573]: Passport (valid for 6 months after you come back), photo with white background, Aadhaar card, and meningitis vaccine certificate. After booking, you send them in your app.
+        - button "How can I pay? +" [ref=e575] [cursor=pointer]:
+          - generic [ref=e576]: How can I pay?
+          - generic [ref=e577]: +
+        - button "Can one person in the family do the booking for everyone? +" [ref=e579] [cursor=pointer]:
+          - generic [ref=e580]: Can one person in the family do the booking for everyone?
+          - generic [ref=e581]: +
+        - button "Who helps us in Saudi Arabia? +" [ref=e583] [cursor=pointer]:
+          - generic [ref=e584]: Who helps us in Saudi Arabia?
+          - generic [ref=e585]: +
+        - button "When should I book? +" [ref=e587] [cursor=pointer]:
+          - generic [ref=e588]: When should I book?
+          - generic [ref=e589]: +
+        - button "Can I choose my room? +" [ref=e591] [cursor=pointer]:
+          - generic [ref=e592]: Can I choose my room?
+          - generic [ref=e593]: +
+        - button "Can I get a wheelchair? +" [ref=e595] [cursor=pointer]:
+          - generic [ref=e596]: Can I get a wheelchair?
+          - generic [ref=e597]: +
+        - button "What if my visa is not given? +" [ref=e599] [cursor=pointer]:
+          - generic [ref=e600]: What if my visa is not given?
+          - generic [ref=e601]: +
+    - generic [ref=e603]:
+      - generic [ref=e604]:
+        - generic [ref=e605]:
+          - heading "Rules in short" [level=2] [ref=e606]:
+            - generic [ref=e607]: Rules
+            - generic [ref=e608]: in
+            - generic [ref=e609]: short
+          - paragraph [ref=e610]: This is only a short version. Please read the full rules before booking.
+        - button "Read full rules →" [ref=e611] [cursor=pointer]
+      - generic [ref=e612]:
+        - generic [ref=e613]:
+          - heading "When to pay" [level=3] [ref=e614]
+          - generic [ref=e615]:
+            - generic [ref=e616]: At booking
+            - generic [ref=e617]: ₹25,000 per person (Umrah) or ₹1,00,000 (Hajj)
+          - generic [ref=e618]:
+            - generic [ref=e619]: 60 days before departure
+            - generic [ref=e620]: Half of the total
+          - generic [ref=e621]:
+            - generic [ref=e622]: 30 days before departure
+            - generic [ref=e623]: All the rest
+        - generic [ref=e624]:
+          - heading "Cancel and refund" [level=3] [ref=e625]
+          - generic [ref=e626]:
+            - generic [ref=e627]: More than 60 days before
+            - generic [ref=e628]: All money back, minus ₹10,000 per person
+          - generic [ref=e629]:
+            - generic [ref=e630]: 30–60 days before
+            - generic [ref=e631]: Half money back
+          - generic [ref=e632]:
+            - generic [ref=e633]: 15–29 days before
+            - generic [ref=e634]: 25% money back
+          - generic [ref=e635]:
+            - generic [ref=e636]: Less than 15 days, or you do not come
+            - generic [ref=e637]: No money back
+          - paragraph [ref=e638]: If the visa is not given, we return all money except the visa fee and flight cancel charges.
+    - generic [ref=e640]:
+      - generic [ref=e641]:
+        - heading "Visit or call us" [level=2] [ref=e642]:
+          - generic [ref=e643]: Visit
+          - generic [ref=e644]: or
+          - generic [ref=e645]: call
+          - generic [ref=e646]: us
+        - generic [ref=e647]:
+          - generic [ref=e648]: Office
+          - generic [ref=e649]: Shop 14, Khajrana Road, Indore 452016
+          - generic [ref=e650]: Mon–Sat, 10 am – 7 pm
+        - generic [ref=e651]:
+          - generic [ref=e652]:
+            - generic [ref=e653]: Phone
+            - generic [ref=e654]: +91 98200 12345
+          - generic [ref=e655]:
+            - generic [ref=e656]: Email
+            - generic [ref=e657]: hello@maryamhajjtours.in
+          - generic [ref=e658]:
+            - generic [ref=e659]: In Saudi Arabia
+            - generic [ref=e660]: +966 12 540 7788
+        - generic [ref=e661]:
+          - button "Ask us" [ref=e662] [cursor=pointer]
+          - link "WhatsApp us" [ref=e663] [cursor=pointer]:
+            - /url: https://wa.me/919820012345?text=Assalamu%20alaikum.%20I%20would%20like%20to%20know%20about%20your%20packages.
+      - generic [ref=e665]:
+        - generic [ref=e666]: Map · Khajrana Road, Indore
+        - link "Open in Google Maps" [ref=e667] [cursor=pointer]:
+          - /url: https://maps.google.com/?q=Khajrana+Road+Indore
+    - contentinfo [ref=e668]:
+      - generic [ref=e669]:
+        - generic [ref=e670]:
+          - generic [ref=e671]: Maryam Hajj Tours
+          - generic [ref=e672]: Shop 14, Khajrana Road, Indore 452016
+        - generic [ref=e673]:
+          - button "About us" [ref=e674] [cursor=pointer]
+          - button "Packages" [ref=e675] [cursor=pointer]
+          - button "Sawal-Jawab" [ref=e676] [cursor=pointer]
+          - button "Rules" [ref=e677] [cursor=pointer]
+        - generic [ref=e678]:
+          - generic [ref=e679]: Contact
+          - generic [ref=e680]: +91 98200 12345 · hello@maryamhajjtours.in
+          - generic [ref=e681]: Mon–Sat, 10 am – 7 pm

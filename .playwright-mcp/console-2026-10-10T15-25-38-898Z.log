@@ -1,0 +1,24 @@
+[     293ms] [ERROR] Error: <path> attribute d: Expected moveto path command ('M' or 'm'), "{{ tb.d }}". @ http://localhost:8080/Maryam%20Hajj%20Tours.dc.html:918
+[     295ms] [WARNING] The specified value "{{ exf.price.v }}" cannot be parsed, or is out of range. @ http://localhost:8080/Maryam%20Hajj%20Tours.dc.html:1440
+[     295ms] [WARNING] The specified value "{{ pf.days.v }}" cannot be parsed, or is out of range. @ http://localhost:8080/Maryam%20Hajj%20Tours.dc.html:1446
+[     295ms] [WARNING] The specified value "{{ pf.mkN.v }}" cannot be parsed, or is out of range. @ http://localhost:8080/Maryam%20Hajj%20Tours.dc.html:1449
+[     296ms] [WARNING] The specified value "{{ pf.mdN.v }}" cannot be parsed, or is out of range. @ http://localhost:8080/Maryam%20Hajj%20Tours.dc.html:1449
+[     296ms] [WARNING] The specified value "{{ pf.Quad.v }}" cannot be parsed, or is out of range. @ http://localhost:8080/Maryam%20Hajj%20Tours.dc.html:1451
+[     296ms] [WARNING] The specified value "{{ pf.Triple.v }}" cannot be parsed, or is out of range. @ http://localhost:8080/Maryam%20Hajj%20Tours.dc.html:1451
+[     296ms] [WARNING] The specified value "{{ pf.Double.v }}" cannot be parsed, or is out of range. @ http://localhost:8080/Maryam%20Hajj%20Tours.dc.html:1451
+[     296ms] [WARNING] The specified value "{{ pf.Child.v }}" cannot be parsed, or is out of range. @ http://localhost:8080/Maryam%20Hajj%20Tours.dc.html:1451
+[     296ms] [WARNING] The specified value "{{ pf.Infant.v }}" cannot be parsed, or is out of range. @ http://localhost:8080/Maryam%20Hajj%20Tours.dc.html:1451
+[     296ms] [WARNING] The specified value "{{ bfm.depart.v }}" does not conform to the required format, "yyyy-MM-dd". @ http://localhost:8080/Maryam%20Hajj%20Tours.dc.html:1463
+[     296ms] [WARNING] The specified value "{{ bfm.seats.v }}" cannot be parsed, or is out of range. @ http://localhost:8080/Maryam%20Hajj%20Tours.dc.html:1463
+[     296ms] [WARNING] The specified value "{{ bfm.outT.v }}" does not conform to the required format.  The format is "HH:mm", "HH:mm:ss" or "HH:mm:ss.SSS" where HH is 00-23, mm is 00-59, ss is 00-59, and SSS is 000-999. @ http://localhost:8080/Maryam%20Hajj%20Tours.dc.html:1465
+[     296ms] [WARNING] The specified value "{{ bfm.backT.v }}" does not conform to the required format.  The format is "HH:mm", "HH:mm:ss" or "HH:mm:ss.SSS" where HH is 00-23, mm is 00-59, ss is 00-59, and SSS is 000-999. @ http://localhost:8080/Maryam%20Hajj%20Tours.dc.html:1465
+[     296ms] [WARNING] The specified value "{{ bfm.Quad.v }}" cannot be parsed, or is out of range. @ http://localhost:8080/Maryam%20Hajj%20Tours.dc.html:1469
+[     296ms] [WARNING] The specified value "{{ bfm.Triple.v }}" cannot be parsed, or is out of range. @ http://localhost:8080/Maryam%20Hajj%20Tours.dc.html:1469
+[     296ms] [WARNING] The specified value "{{ bfm.Double.v }}" cannot be parsed, or is out of range. @ http://localhost:8080/Maryam%20Hajj%20Tours.dc.html:1469
+[     296ms] [WARNING] The specified value "{{ bfm.Child.v }}" cannot be parsed, or is out of range. @ http://localhost:8080/Maryam%20Hajj%20Tours.dc.html:1469
+[     296ms] [WARNING] The specified value "{{ bfm.Infant.v }}" cannot be parsed, or is out of range. @ http://localhost:8080/Maryam%20Hajj%20Tours.dc.html:1469
+[     297ms] [WARNING] The specified value "{{ bk.age.v }}" cannot be parsed, or is out of range. @ http://localhost:8080/Maryam%20Hajj%20Tours.dc.html:1483
+[     544ms] [WARNING] The specified value "{{ cfg.passMonths.v }}" cannot be parsed, or is out of range. @ http://localhost:8080/Maryam%20Hajj%20Tours.dc.html:1730
+[     544ms] [WARNING] The specified value "{{ pay.amt.v }}" cannot be parsed, or is out of range. @ http://localhost:8080/Maryam%20Hajj%20Tours.dc.html:1751
+[     545ms] [WARNING] The specified value "{{ rf.amt.v }}" cannot be parsed, or is out of range. @ http://localhost:8080/Maryam%20Hajj%20Tours.dc.html:1765
+[    5358ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://localhost:8080/favicon.ico:0
