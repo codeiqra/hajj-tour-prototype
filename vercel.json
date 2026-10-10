@@ -1,0 +1,5 @@
+{
+  "rewrites": [
+    { "source": "/", "destination": "/Maryam Hajj Tours.dc.html" }
+  ]
+}
