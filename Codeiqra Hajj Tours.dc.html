@@ -34,16 +34,39 @@ body{margin:0;background:#D8E3A8}
 button,input,select,textarea{font-family:inherit;font-size:inherit}
 a{color:var(--c-secondary)}
 a:hover{color:var(--c-accent)}
+@media (max-width:1000px){
+[data-r="stack"]{grid-template-columns:minmax(0,1fr) !important}
+}
+@media (max-width:880px){
+[data-r="stk"]{position:static !important}
+}
+@media (max-width:759px){
+[data-r="pbar"]{padding:0 8px !important;gap:6px !important}
+[data-r="plabel"],[data-r="pdark"],[data-r="htheme"]{display:none !important}
+[data-r="ptab"]{padding:6px 8px !important}
+[data-r="hrow"]{padding:10px 16px !important;gap:6px 2px !important}
+[data-r="hnav"]{display:contents !important}
+[data-r="hlogo"]{order:0;margin-inline-end:auto}
+[data-r="hname"]{font-size:18px !important}
+[data-r="hask"]{order:1;padding:8px 14px !important}
+[data-r="hlink"]{order:2;padding:6px 8px !important;font-size:14px}
+[data-r="hrow"]::after{content:"";order:1;flex-basis:100%;height:0}
+[data-r="hnav"]>[data-r="hlink"]:first-child{display:none !important}
+[data-r="htools"]{order:3;margin-inline:0 !important}
+h1[style*="font-size:48px"],h1[style*="font-size:52px"]{font-size:36px !important}
+h2[style*="font-size:44px"],h2[style*="font-size:40px"]{font-size:34px !important}
+h2[style*="font-size:36px"]{font-size:30px !important}
+}
 </style>
 </helmet>
 <div data-palette="{{ palette }}" data-theme="{{ theme }}" style="min-height:100vh; background:var(--c-bg); color:var(--c-text); font-family:'Figtree',sans-serif; font-size:15px; line-height:1.5;">
 
-<div style="position:sticky; top:0; z-index:60; height:44px; display:flex; align-items:center; justify-content:space-between; gap:12px; padding:0 16px; background:var(--c-text-strong); color:var(--c-bg--0); font:500 12px/1 'JetBrains Mono',monospace;">
+<div data-r="pbar" style="position:sticky; top:0; z-index:60; height:44px; display:flex; align-items:center; justify-content:space-between; gap:12px; padding:0 16px; background:var(--c-text-strong); color:var(--c-bg--0); font:500 12px/1 'JetBrains Mono',monospace;">
   <div style="display:flex; align-items:center; gap:12px;">
-    <span style="opacity:.75;">PROTOTYPE</span>
+    <span data-r="plabel" style="opacity:.75;">PROTOTYPE</span>
     <div style="display:flex; gap:2px; padding:3px; border-radius:8px; background:color-mix(in oklab, var(--c-bg--0) 14%, transparent);">
       <sc-for list="{{ appTabs }}" as="a" hint-placeholder-count="2">
-        <button onClick="{{ a.onClick }}" style="border:0; border-radius:6px; padding:6px 12px; cursor:pointer; font:600 12px/1 'JetBrains Mono',monospace; background:{{ a.bg }}; color:{{ a.fg }};">{{ a.label }}</button>
+        <button data-r="ptab" onClick="{{ a.onClick }}" style="border:0; border-radius:6px; padding:6px 12px; cursor:pointer; font:600 12px/1 'JetBrains Mono',monospace; background:{{ a.bg }}; color:{{ a.fg }};">{{ a.label }}</button>
       </sc-for>
     </div>
   </div>
@@ -59,23 +82,23 @@ a:hover{color:var(--c-accent)}
         </div>
       </sc-if>
     </div>
-    <button onClick="{{ toggleTheme }}" style="border:1px solid color-mix(in oklab, var(--c-bg--0) 35%, transparent); background:transparent; color:var(--c-bg--0); border-radius:6px; padding:6px 12px; cursor:pointer; font:600 12px/1 'JetBrains Mono',monospace;">{{ themeLabel }}</button>
+    <button data-r="pdark" onClick="{{ toggleTheme }}" style="border:1px solid color-mix(in oklab, var(--c-bg--0) 35%, transparent); background:transparent; color:var(--c-bg--0); border-radius:6px; padding:6px 12px; cursor:pointer; font:600 12px/1 'JetBrains Mono',monospace;">{{ themeLabel }}</button>
   </div>
 </div>
 
 <sc-if value="{{ isSite }}" hint-placeholder-val="{{ true }}">
 <div dir="{{ dir }}" style="font-family:{{ bodyFont }}; line-height:{{ bodyLh }}; background:var(--c-bg--0);">
   <header ref="{{ hdrRef }}" style="position:sticky; top:44px; z-index:40; background:{{ hdrBg }}; backdrop-filter:{{ hdrBlur }}; border-bottom:1px solid {{ hdrBorder }}; transition:background .25s, border-color .25s;">
-    <div style="max-width:1200px; margin:0 auto; padding:{{ hdrPad }}; display:flex; align-items:center; justify-content:space-between; gap:20px; flex-wrap:wrap; transition:padding .35s ease;">
-      <button onClick="{{ goHome }}" style="display:flex; align-items:center; gap:10px; background:none; border:0; padding:0; cursor:pointer; color:{{ hdrFg }};">
+    <div data-r="hrow" style="max-width:1200px; margin:0 auto; padding:{{ hdrPad }}; display:flex; align-items:center; justify-content:space-between; gap:20px; flex-wrap:wrap; transition:padding .35s ease;">
+      <button data-r="hlogo" onClick="{{ goHome }}" style="display:flex; align-items:center; gap:10px; background:none; border:0; padding:0; cursor:pointer; color:{{ hdrFg }};">
         <span style="width:34px; height:34px; border-radius:9px; background:var(--c-accent); color:var(--c-on-accent); display:grid; place-items:center; font:600 20px/1 'Newsreader',serif;">C</span>
-        <span style="font:500 21px/1 'Newsreader',serif; letter-spacing:-.01em;">Codeiqra Hajj Tours</span>
+        <span data-r="hname" style="font:500 21px/1 'Newsreader',serif; letter-spacing:-.01em;">Codeiqra Hajj Tours</span>
       </button>
-      <nav style="display:flex; align-items:center; gap:6px; flex-wrap:wrap;">
+      <nav data-r="hnav" style="display:flex; align-items:center; gap:6px; flex-wrap:wrap;">
         <sc-for list="{{ siteNav }}" as="n" hint-placeholder-count="2">
-          <button onClick="{{ n.onClick }}" style="background:none; border:0; padding:8px 12px; border-radius:8px; cursor:pointer; font-weight:600; color:{{ n.fg }};">{{ n.label }}</button>
+          <button data-r="hlink" onClick="{{ n.onClick }}" style="background:none; border:0; padding:8px 12px; border-radius:8px; cursor:pointer; font-weight:600; color:{{ n.fg }};">{{ n.label }}</button>
         </sc-for>
-        <div style="display:flex; gap:6px; align-items:center; margin-inline:8px;">
+        <div data-r="htools" style="display:flex; gap:6px; align-items:center; margin-inline:8px;">
           <div style="position:relative; display:inline-flex;  ">
           <button onClick="{{ lmToggleSite }}" aria-haspopup="listbox" style="display:inline-flex; align-items:center; gap:6px; cursor:pointer; width:100%; background:transparent; padding:7px 11px; border:1px solid {{ hdrBorder }}; border-radius:9px; color:{{ hdrFg }}; font-size:13px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="flex-shrink:0;"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18M12 3c2.6 2.8 2.6 15.2 0 18M12 3c-2.6 2.8-2.6 15.2 0 18"></path></svg><span style="font-weight:600; flex:1; text-align:start;">{{ langName }}</span><span style="font-size:11px; opacity:.8;">▾</span></button>
           <sc-if value="{{ lmOpenSite }}" hint-placeholder-val="{{ false }}">
@@ -86,7 +109,7 @@ a:hover{color:var(--c-accent)}
             </div>
           </sc-if>
         </div>
-          <div style="position:relative;">
+          <div data-r="htheme" style="position:relative;">
       <button onClick="{{ tmToggleSite }}" style="display:inline-flex; align-items:center; gap:7px; cursor:pointer; padding:7px 11px; border:1px solid {{ hdrBorder }}; border-radius:9px; background:transparent; color:{{ hdrFg }}; font-weight:600; font-size:13px;"><span style="width:12px; height:12px; border-radius:50%; background:{{ tmCur.dot }}; box-shadow:0 0 0 2px color-mix(in oklab, currentColor 30%, transparent);"></span>Theme <span style="font-size:11px; opacity:.8;">▾</span></button>
       <sc-if value="{{ tmOpenSite }}" hint-placeholder-val="{{ false }}">
         <div onClick="{{ tmClose }}" style="position:fixed; inset:0; z-index:90;"></div>
@@ -98,7 +121,7 @@ a:hover{color:var(--c-accent)}
       </sc-if>
     </div>
         </div>
-        <button data-shine="1" onClick="{{ goEnquiry }}" style="border:0; border-radius:9px; padding:10px 16px; background:var(--c-accent); color:var(--c-on-accent); font-weight:600; cursor:pointer;" style-hover="background:var(--c-accent-dark)">{{ t.enquire }}</button>
+        <button data-r="hask" data-shine="1" onClick="{{ goEnquiry }}" style="border:0; border-radius:9px; padding:10px 16px; background:var(--c-accent); color:var(--c-on-accent); font-weight:600; cursor:pointer;" style-hover="background:var(--c-accent-dark)">{{ t.enquire }}</button>
       </nav>
     </div>
   </header>
@@ -284,7 +307,7 @@ a:hover{color:var(--c-accent)}
 
     <section style="background:var(--c-bg--0);">
       <div data-scrub="1" style="max-width:1200px; margin:0 auto; padding:96px 24px; display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,380px),1fr)); gap:56px; align-items:start;">
-        <div style="position:sticky; top:150px; display:flex; flex-direction:column; gap:18px;">
+        <div data-r="stk" style="position:sticky; top:150px; display:flex; flex-direction:column; gap:18px;">
           <h2 data-words="1" style="margin:0; font-family:{{ headFont }}; font-weight:500; font-size:44px; line-height:{{ headLh }}; color:var(--c-text-strong);"><sc-for list="{{ W.guideT }}" as="wd" hint-placeholder-count="3"><span data-w="1" style="display:inline-block; margin-inline-end:.26em;">{{ wd.w }}</span></sc-for></h2>
           <p data-anim="up" style="margin:0; color:var(--c-text-muted); font-size:16px; max-width:420px;">{{ t.guideSub }}</p>
           <div data-anim="up" style="display:flex; gap:4px; padding:4px; border:1px solid var(--c-divider); border-radius:10px; align-self:flex-start;">
@@ -344,7 +367,7 @@ a:hover{color:var(--c-accent)}
 
     <section id="faq" style="position:relative; isolation:isolate; overflow:hidden; background:var(--c-bg); border-top:1px solid var(--c-divider);"><div data-bgdrift="0.8" style="position:absolute; inset:0; z-index:-1; pointer-events:none; background-color:var(--c-accent); -webkit-mask-image:url(&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='none' stroke='%23000000' stroke-width='1.2'%3E%3Crect x='22' y='22' width='36' height='36'/%3E%3Crect x='22' y='22' width='36' height='36' transform='rotate(45 40 40)'/%3E%3Ccircle cx='40' cy='40' r='7'/%3E%3Cpath d='M0 0L22 22M80 0L58 22M0 80L22 58M80 80L58 58M40 0v14.5M40 80v-14.5M0 40h14.5M80 40h-14.5'/%3E%3C/g%3E%3C/svg%3E&quot;); mask-image:url(&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='none' stroke='%23000000' stroke-width='1.2'%3E%3Crect x='22' y='22' width='36' height='36'/%3E%3Crect x='22' y='22' width='36' height='36' transform='rotate(45 40 40)'/%3E%3Ccircle cx='40' cy='40' r='7'/%3E%3Cpath d='M0 0L22 22M80 0L58 22M0 80L22 58M80 80L58 58M40 0v14.5M40 80v-14.5M0 40h14.5M80 40h-14.5'/%3E%3C/g%3E%3C/svg%3E&quot;); opacity:.06;"></div>
       <div style="max-width:1200px; margin:0 auto; padding:88px 24px; display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr)); gap:40px; align-items:start;">
-        <div style="display:flex; flex-direction:column; gap:12px; position:sticky; top:130px;">
+        <div data-r="stk" style="display:flex; flex-direction:column; gap:12px; position:sticky; top:130px;">
           <span style="font-size:13px; font-weight:600; letter-spacing:.06em; color:var(--c-secondary);">{{ t.faqK }}</span>
           <h2 data-words="1" style="margin:0; font-family:{{ headFont }}; font-weight:500; font-size:36px; line-height:{{ headLh }}; color:var(--c-text-strong);"><sc-for list="{{ W.faqs }}" as="wd" hint-placeholder-count="3"><span data-w="1" style="display:inline-block; margin-inline-end:.26em;">{{ wd.w }}</span></sc-for></h2>
           <p data-anim="up" style="margin:0; color:var(--c-text-muted);">{{ t.orCall }}</p>
@@ -1092,7 +1115,7 @@ a:hover{color:var(--c-accent)}
             <div data-bgdrift="1.2" style="position:absolute; top:0; right:0; width:60%; height:100%; z-index:-1; pointer-events:none; background-color:var(--c-accent);  opacity:.08; -webkit-mask-image:url(&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='none' stroke='%23000000' stroke-width='1.2'%3E%3Crect x='22' y='22' width='36' height='36'/%3E%3Crect x='22' y='22' width='36' height='36' transform='rotate(45 40 40)'/%3E%3Ccircle cx='40' cy='40' r='7'/%3E%3Cpath d='M0 0L22 22M80 0L58 22M0 80L22 58M80 80L58 58M40 0v14.5M40 80v-14.5M0 40h14.5M80 40h-14.5'/%3E%3C/g%3E%3C/svg%3E&quot;), linear-gradient(270deg, #000, transparent); mask-image:url(&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='none' stroke='%23000000' stroke-width='1.2'%3E%3Crect x='22' y='22' width='36' height='36'/%3E%3Crect x='22' y='22' width='36' height='36' transform='rotate(45 40 40)'/%3E%3Ccircle cx='40' cy='40' r='7'/%3E%3Cpath d='M0 0L22 22M80 0L58 22M0 80L22 58M80 80L58 58M40 0v14.5M40 80v-14.5M0 40h14.5M80 40h-14.5'/%3E%3C/g%3E%3C/svg%3E&quot;), linear-gradient(270deg, #000, transparent); -webkit-mask-composite:source-in; mask-composite:intersect;"></div>
             <svg width="44" height="44" viewBox="0 0 44 44" style="position:absolute; top:14px; right:14px;"><circle cx="22" cy="22" r="18" fill="none" stroke="var(--c-surface--2)" stroke-width="5"></circle><circle data-ring="1" cx="22" cy="22" r="18" fill="none" stroke="var(--c-accent)" stroke-width="5" stroke-linecap="round" stroke-dasharray="113.1" stroke-dashoffset="{{ k.ringOff }}" transform="rotate(-90 22 22)"></circle></svg>
             <span style="font-size:13px; font-weight:600; color:var(--c-text-muted); padding-inline-end:56px;">{{ k.label }}</span>
-            <span data-count="1" style="font:500 28px/1.15 'Newsreader',serif; color:var(--c-text-strong); padding-inline-end:56px; overflow-wrap:anywhere;">{{ k.value }}</span>
+            <span data-count="1" style="font:500 clamp(22px, 2.4vw, 28px)/1.15 'Newsreader',serif; color:var(--c-text-strong); padding-inline-end:56px; white-space:nowrap;">{{ k.value }}</span>
             <div style="display:flex; justify-content:space-between; gap:8px; align-items:center;"><span style="font-size:13px; color:var(--c-text-muted);">{{ k.sub }}</span>
               <sc-if value="{{ k.action }}" hint-placeholder-val="{{ false }}"><button onClick="{{ k.onClick }}" style="background:none; border:0; padding:0; cursor:pointer; font-weight:600; color:var(--c-secondary); white-space:nowrap;">{{ k.action }} →</button></sc-if>
             </div>
@@ -1208,9 +1231,9 @@ a:hover{color:var(--c-accent)}
       <sc-for list="{{ pd.warns }}" as="w" hint-placeholder-count="0">
         <div style="padding:12px 16px; border-radius:10px; background:color-mix(in oklab, var(--c-warning) 12%, transparent); color:var(--c-text-strong); border:1px solid color-mix(in oklab, var(--c-warning) 35%, transparent);"><strong style="color:var(--c-warning);">Please check</strong> · {{ w.text }}</div>
       </sc-for>
-      <div style="display:flex; gap:4px; border-bottom:1px solid var(--c-divider);">
+      <div style="display:flex; gap:4px; border-bottom:1px solid var(--c-divider); overflow-x:auto; overscroll-behavior-x:contain;">
         <sc-for list="{{ ptabs }}" as="tb" hint-placeholder-count="4">
-          <button onClick="{{ tb.onClick }}" style="background:none; border:0; border-bottom:2px solid {{ tb.bd }}; margin-bottom:-1px; padding:10px 14px; cursor:pointer; font-weight:600; color:{{ tb.fg }};">{{ tb.label }}</button>
+          <button onClick="{{ tb.onClick }}" style="background:none; border:0; border-bottom:2px solid {{ tb.bd }}; padding:10px 14px; flex-shrink:0; white-space:nowrap; cursor:pointer; font-weight:600; color:{{ tb.fg }};">{{ tb.label }}</button>
         </sc-for>
       </div>
 
@@ -1521,7 +1544,7 @@ a:hover{color:var(--c-accent)}
         <div style="padding:56px; text-align:center; background:var(--c-surface); border:1px solid var(--c-divider); border-radius:12px;"><div style="font:500 26px 'Newsreader',serif; color:var(--c-text-strong);">All done</div><div style="color:var(--c-text-muted);">Nothing waiting to be checked.</div></div>
       </sc-if>
       <sc-if value="{{ qHas }}" hint-placeholder-val="{{ true }}">
-        <div style="display:grid; grid-template-columns:minmax(280px,360px) minmax(0,1fr); gap:14px; align-items:start;">
+        <div data-r="stack" style="display:grid; grid-template-columns:minmax(280px,360px) minmax(0,1fr); gap:14px; align-items:start;">
           <div data-anim="stagger" style="background:var(--c-surface); border:1px solid var(--c-divider); border-radius:12px; overflow:auto; max-height:calc(100vh - 220px);">
             <sc-for list="{{ qItems }}" as="it" hint-placeholder-count="8">
               <button onClick="{{ it.onClick }}" style="width:100%; display:flex; flex-direction:column; gap:2px; padding:12px 16px; border:0; border-bottom:1px solid var(--c-divider); border-inline-start:3px solid {{ it.bd }}; background:{{ it.bg }}; cursor:pointer; text-align:start; color:var(--c-text);">
@@ -1579,7 +1602,7 @@ a:hover{color:var(--c-accent)}
           <button onClick="{{ tb.onClick }}" style="background:none; border:0; border-bottom:2px solid {{ tb.bd }}; margin-bottom:-1px; padding:10px 12px; cursor:pointer; font-weight:600; color:{{ tb.fg }};">{{ tb.label }} <span style="opacity:.6;">{{ tb.n }}</span></button>
         </sc-for>
       </div>
-      <div style="display:grid; grid-template-columns:{{ leadCols }}; gap:14px; align-items:start;">
+      <div data-r="stack" style="display:grid; grid-template-columns:{{ leadCols }}; gap:14px; align-items:start;">
         <div style="background:var(--c-surface); border:1px solid var(--c-divider); border-radius:12px; overflow-x:auto; scrollbar-width:thin; scrollbar-color:var(--c-border) transparent; overscroll-behavior-x:contain;">
           <table style="width:100%; border-collapse:collapse; min-width:620px;">
             <thead><tr style="font-size:12px; color:var(--c-text-muted); background:var(--c-bg--0);"><th style="text-align:start; padding:10px 20px; font-weight:600;">Name</th><th style="text-align:start; padding:10px 12px; font-weight:600;">Package</th><th style="text-align:start; padding:10px 12px; font-weight:600;">Source</th><th style="text-align:start; padding:10px 12px; font-weight:600;">Aaya</th><th style="text-align:start; padding:10px 20px; font-weight:600;">Status</th></tr></thead>
@@ -1683,7 +1706,7 @@ a:hover{color:var(--c-accent)}
       <div style="display:flex; gap:4px; border-bottom:1px solid var(--c-divider); flex-wrap:wrap;"><sc-for list="{{ cmsTabs }}" as="tb" hint-placeholder-count="3"><button onClick="{{ tb.onClick }}" style="background:none; border:0; border-bottom:2px solid {{ tb.bd }}; margin-bottom:-1px; padding:10px 14px; cursor:pointer; font-weight:600; color:{{ tb.fg }};">{{ tb.label }} <span style="opacity:.6;">{{ tb.n }}</span></button></sc-for></div>
       <sc-if value="{{ formErr3 }}" hint-placeholder-val="{{ false }}"><div style="padding:10px 14px; border-radius:8px; background:color-mix(in oklab, var(--c-danger) 10%, transparent); color:var(--c-danger); font-weight:600;">{{ formErr3 }}</div></sc-if>
       <sc-if value="{{ cmsPhotos }}" hint-placeholder-val="{{ true }}">
-        <div style="background:var(--c-surface); border:1px solid var(--c-divider); border-radius:12px; padding:16px 20px; display:flex; gap:12px; align-items:flex-end; flex-wrap:wrap;"><label style="display:flex; flex-direction:column; gap:6px; font-size:13px; font-weight:600; color:var(--c-text-muted); flex:1; min-width:240px;">New photo caption<input value="{{ gu.cap.v }}" onChange="{{ gu.cap.on }}" placeholder="Group at Masjid al-Haram, Jan 2027" style="padding:9px 12px; border:1px solid var(--c-border); border-radius:8px; background:var(--c-surface); color:var(--c-text-strong); font-size:14px; width:100%;"></label><button data-shine="1" onClick="{{ galUpload }}" style="border:0; border-radius:8px; padding:10px 16px; background:var(--c-accent); color:var(--c-on-accent); font-weight:600; cursor:pointer;">{{ galUpLabel }}</button><span style="font-size:13px; color:var(--c-text-muted);">{{ galSummary }}</span></div>
+        <div style="background:var(--c-surface); border:1px solid var(--c-divider); border-radius:12px; padding:16px 20px; display:flex; gap:12px; align-items:flex-end; flex-wrap:wrap;"><label style="display:flex; flex-direction:column; gap:6px; font-size:13px; font-weight:600; color:var(--c-text-muted); flex:1; min-width:min(100%,240px);">New photo caption<input value="{{ gu.cap.v }}" onChange="{{ gu.cap.on }}" placeholder="Group at Masjid al-Haram, Jan 2027" style="padding:9px 12px; border:1px solid var(--c-border); border-radius:8px; background:var(--c-surface); color:var(--c-text-strong); font-size:14px; width:100%;"></label><button data-shine="1" onClick="{{ galUpload }}" style="border:0; border-radius:8px; padding:10px 16px; background:var(--c-accent); color:var(--c-on-accent); font-weight:600; cursor:pointer;">{{ galUpLabel }}</button><span style="font-size:13px; color:var(--c-text-muted);">{{ galSummary }}</span></div>
         <div data-anim="stagger" style="display:grid; grid-template-columns:repeat(auto-fill,minmax(180px,1fr)); gap:14px;">
           <sc-for list="{{ galCms }}" as="g" hint-placeholder-count="9">
             <div data-lift="1" style="background:var(--c-surface); border:1px solid var(--c-divider); border-radius:12px; overflow:hidden; display:flex; flex-direction:column; opacity:{{ g.op }}; transition:opacity .3s;">
@@ -2708,7 +2731,7 @@ class Component extends DCLogic {
     return {
       t, dir: rtl ? 'rtl' : 'ltr', arrow: rtl ? '←' : '→', backArrow: rtl ? '→' : '←',
       bodyFont: rtl ? "'Noto Nastaliq Urdu',serif" : "'Figtree','Noto Sans Devanagari',sans-serif", headFont:head,
-      bodyLh: rtl ? '2.1' : L === 'hi' ? '1.7' : '1.55', headLh: rtl ? '1.9' : L === 'hi' ? '1.35' : '1.1', heroSize: rtl ? '50px' : L === 'hi' ? '58px' : '72px',
+      bodyLh: rtl ? '2.1' : L === 'hi' ? '1.7' : '1.55', headLh: rtl ? '1.9' : L === 'hi' ? '1.35' : '1.1', heroSize: (s.vw || 1200) < 760 ? (rtl ? '34px' : L === 'hi' ? '38px' : '44px') : rtl ? '50px' : L === 'hi' ? '58px' : '72px',
       isHome:s.sitePage === 'home', isPackages:s.sitePage === 'packages', isDetail:s.sitePage === 'detail', isEnquiry:s.sitePage === 'enquiry',
       goHome:() => this.go({ sitePage:'home' }), goPackages:() => this.go({ sitePage:'packages' }), goEnquiry:() => this.go({ sitePage:'enquiry' }),
       hdrBg: ovl ? 'transparent' : 'color-mix(in oklab, var(--c-bg--0) 92%, transparent)', hdrBlur: ovl ? 'none' : 'blur(8px)', hdrBorder: ovl ? 'rgba(247,248,239,.28)' : 'var(--c-divider)', hdrFg: ovl ? '#FFFFFF' : 'var(--c-text-strong)',
@@ -2755,6 +2778,7 @@ class Component extends DCLogic {
 
   adminVals(s, set, P, pmap, groups, booked) {
     const page = s.adminPage;
+    const sbMin = s.sbMin ?? ((s.vw || 1200) < 760);
     const vp = k => pill(VISA[k][0], VISA[k][1]);
     const warns = p => { const w = [], b = BM[p.batch];
       if (p.passportExp && D(p.passportExp) < addMonths(b.depart, CFG.passMonths)) w.push('Passport expires ' + fmtD(p.passportExp));
@@ -2773,8 +2797,8 @@ class Component extends DCLogic {
     const nav = [['dashboard','Home',0],['pilgrims','Zaireen',0],['book','New booking',0],['batch','Tours',0],['packages','Packages',0],['docs','Check documents',allPending],['leads','Enquiries',newLeadN],['payments','Payments',0],['import','Excel import',0],['cms','Website',0],['staff','Staff',0],['settings','Settings',0],['history','History',0]].filter(([k]) => ROLES[s.role || 'Owner'].includes(k));
     const navOn = k => page === k || (k === 'pilgrims' && page === 'pilgrim');
     const out = {
-      sbW: s.sbMin ? '76px' : '248px', sbFull:!s.sbMin, sbArrow: s.sbMin ? '»' : '«', toggleSb:() => this.setState({ sbMin:!s.sbMin }), admLoading:!!s.adminLoading,
-      adminNav:nav.map(([k, label0, badge]) => { const label = (AL[s.lang] || AL.en).nav[k] || label0; return ({ label, badge: s.sbMin ? 0 : badge, short:label.split(' ').map(w => w[0]).join('').slice(0, 2).toUpperCase(), bg: navOn(k) ? 'linear-gradient(90deg, color-mix(in oklab, var(--c-side-ac) 28%, transparent), color-mix(in oklab, var(--c-side-ac) 8%, transparent))' : 'transparent', fg: navOn(k) ? '#FFFFFF' : '#D1D4C0', glow: navOn(k) ? 'inset 3px 0 0 var(--c-side-ac), 0 8px 24px -12px color-mix(in oklab, var(--c-side-ac) 60%, transparent)' : 'none', tx: navOn(k) ? 'translateX(4px)' : 'none', icBg: navOn(k) ? 'var(--c-side-ac)' : 'rgba(247,248,239,.1)', icFg: navOn(k) ? 'var(--c-side-on)' : '#D1D4C0', onClick:() => this.go({ adminPage:k }) }); }),
+      sbW: sbMin ? '76px' : '248px', sbFull:!sbMin, sbArrow: sbMin ? '»' : '«', toggleSb:() => this.setState({ sbMin:!sbMin }), admLoading:!!s.adminLoading,
+      adminNav:nav.map(([k, label0, badge]) => { const label = (AL[s.lang] || AL.en).nav[k] || label0; return ({ label, badge: sbMin ? 0 : badge, short:label.split(' ').map(w => w[0]).join('').slice(0, 2).toUpperCase(), bg: navOn(k) ? 'linear-gradient(90deg, color-mix(in oklab, var(--c-side-ac) 28%, transparent), color-mix(in oklab, var(--c-side-ac) 8%, transparent))' : 'transparent', fg: navOn(k) ? '#FFFFFF' : '#D1D4C0', glow: navOn(k) ? 'inset 3px 0 0 var(--c-side-ac), 0 8px 24px -12px color-mix(in oklab, var(--c-side-ac) 60%, transparent)' : 'none', tx: navOn(k) ? 'translateX(4px)' : 'none', icBg: navOn(k) ? 'var(--c-side-ac)' : 'rgba(247,248,239,.1)', icFg: navOn(k) ? 'var(--c-side-on)' : '#D1D4C0', onClick:() => this.go({ adminPage:k }) }); }),
       isDash:!s.adminLoading && page === 'dashboard', isPilgrims:!s.adminLoading && page === 'pilgrims', isPilgrim:!s.adminLoading && page === 'pilgrim', isBatch:!s.adminLoading && page === 'batch', isQueue:!s.adminLoading && page === 'docs', isLeads:!s.adminLoading && page === 'leads',
       goLeads:() => this.go({ adminPage:'leads' }), goPilgrims:() => this.go({ adminPage:'pilgrims' }),
       batchOpts:BATCHES.map(b => ({ id:b.id }))
